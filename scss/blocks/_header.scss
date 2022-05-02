@@ -1,0 +1,24 @@
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding-top: 68px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+    padding-top: 8px;
+
+    li + li {
+      margin-left: 50px;
+    }
+
+    li {
+      font-size: 18px;
+    }
+  }
+}

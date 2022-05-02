@@ -1,0 +1,39 @@
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+  color: $black;
+  background-color: $bg;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 72px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 64px;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 24px;
+  max-width: 1528px;
+}
+
+@font-face {
+  src:
+    local("Neue Machina"),
+    url("../fonts/NeueMachina-Medium.woff2") format("woff2"),
+    url("../fonts/NeueMachina-Medium.woff") format("woff");
+  font-family: "Neue Machina";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

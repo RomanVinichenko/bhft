@@ -1,0 +1,17 @@
+.start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("../images/decor1.svg");
+  background-position: center right 30%;
+  background-size: cover;
+
+  h1 {
+    font-family: "Neue Machina", sans-serif;
+
+    span {
+      color: $main;
+    }
+  }
+}
