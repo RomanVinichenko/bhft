@@ -1,0 +1,95 @@
+.expertise {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("../images/decor-expert1.svg");
+  background-position: center right 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__head {
+    margin-right: 50px;
+    width: 100%;
+    max-width: 460px;
+  }
+
+  h1 {
+    width: 460px;
+    font-family: "Neue Machina", sans-serif;
+    text-transform: uppercase;
+  }
+
+  &__box {
+    max-width: 970px;
+
+    p {
+      font-size: 24px;
+
+      &:not(:last-child) {
+        margin-bottom: 22px;
+      }
+    }
+  }
+}
+
+.profit {
+  margin-bottom: 200px;
+  background-image: url("../images/decor3.svg");
+  background-position: bottom -200px left 45%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  ul {
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      min-height: 150px;
+      background-size: 150px;
+      background-repeat: no-repeat;
+
+      &:not(:last-child) {
+        margin-bottom: 150px;
+      }
+
+      &:nth-child(odd) {
+        padding-left: 364px;
+        max-width: 1020px;
+        background-position: center left;
+      }
+
+      &:nth-child(even) {
+        margin: 0 100px 0 auto;
+        max-width: 870px;
+        background-position: center right;
+
+        p {
+          max-width: 660px;
+        }
+      }
+
+      @for $i from 1 through 5 {
+        &:nth-child(#{$i}) {
+          background-image: url("../images/benefit-big-#{$i}.svg");
+        }
+      }
+    }
+
+    h4 {
+      margin-bottom: 10px;
+      font-weight: 600;
+      font-size: 40px;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 24px;
+      color: $secondary;
+    }
+  }
+}
