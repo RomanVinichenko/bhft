@@ -1,9 +1,12 @@
 body {
+  overflow-x: hidden;
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 400;
+  font-size: 20px;
   line-height: 1.15;
   color: $black;
   background-color: $bg;
+  cursor: default;
 }
 
 h1 {
@@ -27,6 +30,36 @@ h3 {
   max-width: 1528px;
 }
 
+.button-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  min-height: 50px;
+  border: 1px solid $main;
+  font-weight: 500;
+  font-size: 18px;
+  color: $white;
+  background-color: $main;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out;
+
+  &:hover {
+    color: $main;
+    background-color: $white;
+  }
+
+  &:active {
+    border: 1px solid #2d5bfe;
+    color: $white;
+    background-color: #2d5bfe;
+  }
+
+  &:disabled {
+    border: 1px solid #595959;
+    background-color: #595959;
+  }
+}
+
 @font-face {
   src:
     local("Neue Machina"),
@@ -36,4 +69,9 @@ h3 {
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+}
+
+*::selection {
+  color: $white;
+  background-color: $main;
 }

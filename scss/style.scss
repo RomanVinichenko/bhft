@@ -1,8 +1,10 @@
 @import "reset";
 @import "utilities/variables";
+@import "utilities/mixins";
 @import "blocks/header";
 @import "global";
+@import "blocks/footer";
 @import "blocks/home";
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap");
 
 /* @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"); */
