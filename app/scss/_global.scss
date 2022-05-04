@@ -1,4 +1,7 @@
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   overflow-x: hidden;
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 400;
@@ -7,6 +10,14 @@ body {
   color: $black;
   background-color: $bg;
   cursor: default;
+}
+
+html {
+  height: 100%;
+}
+
+.main {
+  flex-grow: 1;
 }
 
 h1 {
