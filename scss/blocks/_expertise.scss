@@ -37,9 +37,9 @@
 }
 
 .profit {
-  margin-bottom: 200px;
+  padding-bottom: 200px;
   background-image: url("../images/decor3.svg");
-  background-position: bottom -200px left 45%;
+  background-position: bottom -100px left 45%;
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -64,7 +64,7 @@
       }
 
       &:nth-child(even) {
-        margin: 0 100px 0 auto;
+        margin: 0 100px 150px auto;
         max-width: 870px;
         background-position: center right;
 
