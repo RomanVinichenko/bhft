@@ -18,7 +18,7 @@
 }
 
 .we-do {
-  ul {
+  &__items {
     display: flex;
     justify-content: space-between;
     margin-bottom: 250px;
@@ -69,14 +69,14 @@
       z-index: -1;
     }
   }
+}
 
-  &__box {
-    max-width: 970px;
+.we-box {
+  max-width: 970px;
 
-    p {
-      margin-bottom: 50px;
-      font-size: 36px;
-    }
+  p {
+    margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
@@ -230,6 +230,7 @@
   padding-right: 44px;
   width: fit-content;
   font-weight: 500;
+  line-height: 24px;
   color: $main;
 
   &::after {
