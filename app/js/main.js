@@ -2,15 +2,26 @@
 
 let scrollpos = window.scrollY;
 const header = document.querySelector('.header');
+const headerDark = document.querySelector('.header-dark');
 const logo = document.querySelector('.logo');
 
 const addClass = () => {
-  header.classList.add('header--active');
-  logo.classList.add('logo--active');
+  if (header) {
+    header.classList.add('header--active');
+    logo.classList.add('logo--active');
+  }
+  if (headerDark) {
+    headerDark.classList.add('header-dark--active');
+  }
 };
 const removeClass = () => {
-  header.classList.remove('header--active');
-  logo.classList.remove('logo--active');
+  if (header) {
+    header.classList.remove('header--active');
+    logo.classList.remove('logo--active');
+  }
+  if (headerDark) {
+    headerDark.classList.remove('header-dark--active');
+  }
 };
 
 window.addEventListener('scroll', function () {
