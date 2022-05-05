@@ -6,6 +6,14 @@
   padding-top: 68px;
   transition: all 0.2s;
 
+  &-dark {
+    background-color: transparent;
+  }
+
+  &-dark--active {
+    background-color: #171717;
+  }
+
   &--active {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -86,9 +94,5 @@
   img {
     visibility: hidden;
     opacity: 0;
-  }
-
-  .logo__star {
-    background-color: $bg;
   }
 }

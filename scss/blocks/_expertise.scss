@@ -1,21 +1,8 @@
 .expertise {
-  display: flex;
-  padding-top: 300px;
-  min-height: 100vh;
   background-image: url("../images/decor-expert1.svg");
   background-position: center right 30%;
   background-size: cover;
   background-repeat: no-repeat;
-
-  &__wrapper {
-    display: flex;
-  }
-
-  &__head {
-    margin-right: 50px;
-    width: 100%;
-    max-width: 460px;
-  }
 
   h1 {
     width: 460px;

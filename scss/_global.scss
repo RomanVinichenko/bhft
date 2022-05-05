@@ -86,3 +86,19 @@ h3 {
   color: $white;
   background-color: $main;
 }
+
+.top {
+  display: flex;
+  padding-top: 15%;
+  min-height: 100vh;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__head {
+    margin-right: 50px;
+    width: 100%;
+    max-width: 460px;
+  }
+}
