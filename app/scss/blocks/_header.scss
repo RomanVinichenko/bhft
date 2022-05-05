@@ -6,14 +6,6 @@
   padding-top: 68px;
   transition: all 0.2s;
 
-  &-dark {
-    background-color: transparent;
-  }
-
-  &-dark--active {
-    background-color: #171717;
-  }
-
   &--active {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -26,6 +18,14 @@
       }
     }
   }
+}
+
+.header-dark {
+  background-color: transparent;
+}
+
+.header-dark--active {
+  background-color: #171717;
 }
 
 .menu {
