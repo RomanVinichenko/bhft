@@ -75,6 +75,10 @@
     text-transform: uppercase;
     color: $main;
   }
+
+  &--article {
+    margin-bottom: 250px;
+  }
 }
 
 .skills {
@@ -128,6 +132,7 @@
       position: absolute;
       right: 70%;
       top: -80%;
+      z-index: -1;
       width: 100%;
       height: 100%;
     }

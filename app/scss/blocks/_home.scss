@@ -292,4 +292,14 @@
   &__inner {
     width: 100%;
   }
+
+  &--article {
+    margin-bottom: 200px;
+
+    h2 {
+      span {
+        display: inline;
+      }
+    }
+  }
 }
