@@ -1,0 +1,151 @@
+.blog {
+  position: relative;
+  padding: 300px 0 250px;
+
+  &::after {
+    content: url("../images/decor-expert1.svg");
+    position: absolute;
+    right: 70%;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+
+  h1 {
+    font-family: "Neue Machina", sans-serif;
+    text-transform: uppercase;
+
+    span {
+      color: $main;
+    }
+  }
+}
+
+.article {
+  &__list {
+    margin-bottom: 58px;
+    padding-top: 50px;
+    border-top: 2px solid $black;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 50px;
+      border-bottom: 2px solid $black;
+
+      &:not(:last-child) {
+        margin-bottom: 50px;
+      }
+
+      img {
+        margin-right: 50px;
+        width: 100%;
+        max-width: 460px;
+        max-height: 310px;
+        object-fit: cover;
+      }
+
+      span {
+        display: block;
+        margin-bottom: 25px;
+        color: $secondary;
+      }
+
+      h4 {
+        margin-bottom: 25px;
+        font-weight: 500;
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+.pagination {
+  margin-bottom: 50px;
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__list {
+    display: flex;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border: 1px solid $main;
+      border-radius: 50%;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 40px;
+      background-color: $white;
+      transition: background-color 0.2s, color 0.2s;
+
+      a {
+        display: block;
+        width: 100%;
+        height: 40px;
+        border-radius: 50%;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 40px;
+        text-align: center;
+      }
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+
+      &:nth-last-child(2) {
+        border: none;
+        background-color: transparent;
+
+        &:hover {
+          color: inherit;
+          background-color: transparent;
+        }
+      }
+
+      &:hover {
+        color: $white;
+        background-color: $main;
+      }
+    }
+
+    li + .current {
+      color: $white;
+      background-color: $main;
+    }
+  }
+
+  .button-link {
+    margin: 0 auto 25px;
+  }
+
+  &__prev {
+    margin-right: 15px;
+  }
+
+  &__next {
+    margin-left: 15px;
+  }
+
+  &__prev,
+  &__next {
+    display: flex;
+    width: 24px;
+    height: 24px;
+
+    img {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+    }
+  }
+}
