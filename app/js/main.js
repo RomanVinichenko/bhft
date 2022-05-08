@@ -4,6 +4,8 @@ let scrollpos = window.scrollY;
 const header = document.querySelector('.header');
 const headerDark = document.querySelector('.header-dark');
 const logo = document.querySelector('.logo');
+const menuBurger = document.querySelector('.menu__burger');
+const menuList = document.querySelector('.menu__list');
 
 const addClass = () => {
   if (header) {
@@ -23,6 +25,10 @@ const removeClass = () => {
     headerDark.classList.remove('header-dark--active');
   }
 };
+
+menuBurger.addEventListener('click', function () {
+  menuList.classList.toggle('menu__list--active');
+});
 
 window.addEventListener('scroll', function () {
   scrollpos = window.scrollY;

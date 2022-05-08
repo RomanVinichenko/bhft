@@ -69,6 +69,20 @@ h3 {
     border: 1px solid #595959;
     background-color: #595959;
   }
+
+  @include r($lg) {
+    width: 130px;
+    min-height: 35px;
+    font-size: 14px;
+  }
+
+  @include r($md) {
+    margin: 0 auto;
+  }
+
+  @include r($sm) {
+    margin: 0 auto 0 0;
+  }
 }
 
 @font-face {

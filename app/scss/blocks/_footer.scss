@@ -3,14 +3,34 @@
   color: $white;
   background-color: $main;
 
+  &__container {
+    @include r($md) {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+  }
+
   &__info {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
     p {
       font-weight: 500;
       font-size: 16px;
       line-height: 19px;
+
+      @include r($md) {
+        margin-bottom: 5px;
+        font-weight: 400;
+        font-size: 14px;
+      }
+
+      @include r($sm) {
+        font-size: 10px;
+        line-height: 13px;
+      }
     }
 
     ul {
@@ -18,8 +38,11 @@
 
       li {
         a {
+          display: block;
+          height: 19px;
           font-weight: 500;
           font-size: 16px;
+          line-height: 19px;
           text-decoration: underline transparent;
           transition: text-decoration 0.2s, font-weight 0.2s;
 
@@ -31,13 +54,45 @@
             font-weight: 600;
             text-decoration: underline;
           }
+
+          @include r($lg) {
+            font-weight: 400;
+            font-size: 14px;
+          }
+
+          @include r($sm) {
+            height: 13px;
+            font-size: 10px;
+            line-height: 13px;
+          }
         }
       }
 
       li + li {
         margin-left: 69px;
+
+        @include r($xl) {
+          margin-left: 40px;
+        }
+
+        @include r($lg) {
+          margin-left: 30px;
+        }
+
+        @include r($md) {
+          margin-left: 15px;
+        }
       }
     }
+
+    @include r($md) {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+
+  @include r($md) {
+    padding: 31px 0 15px;
   }
 }
 
@@ -52,6 +107,18 @@
 
     li + li {
       margin-left: 67px;
+
+      @include r(1600) {
+        margin-left: 40px;
+      }
+
+      @include r(1400) {
+        margin-left: 30px;
+      }
+
+      @include r($lg) {
+        margin-left: 15px;
+      }
     }
 
     a {
@@ -73,6 +140,10 @@
         width: 29px;
         height: 29px;
         transform: translateY(-50%);
+
+        @include r($lg) {
+          transform: translateY(-50%) scale(0.6);
+        }
       }
 
       &:hover {
@@ -83,6 +154,54 @@
         font-weight: 600;
         text-decoration: underline;
       }
+
+      @include r(1400) {
+        font-size: 20px;
+      }
+
+      @include r($xl) {
+        padding-right: 35px;
+        font-size: 18px;
+      }
+
+      @include r($lg) {
+        padding-right: 25px;
+        font-size: 16px;
+      }
+    }
+
+    @include r($md) {
+      display: none;
+    }
+
+    @include r(1400) {
+      padding-top: 10px;
+    }
+  }
+
+  @include r($md) {
+    margin-bottom: 0;
+  }
+}
+
+.logo-footer {
+  @include r($md) {
+    width: 90px;
+    height: 79px;
+
+    img {
+      width: 90px;
+      height: 79px;
+    }
+  }
+
+  @include r($sm) {
+    width: 63px;
+    height: 55px;
+
+    img {
+      width: 63px;
+      height: 55px;
     }
   }
 }
