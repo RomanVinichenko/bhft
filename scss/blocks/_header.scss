@@ -3,7 +3,7 @@
   left: 0;
   right: 0;
   z-index: 20;
-  padding-top: 68px;
+  padding-top: 58px;
   transition: all 0.2s;
 
   &--active {
@@ -30,7 +30,7 @@
   }
 
   @include r(1800) {
-    padding-top: 54px;
+    padding-top: 34px;
   }
 }
 
