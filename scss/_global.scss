@@ -108,11 +108,57 @@ h3 {
 
   &__wrapper {
     display: flex;
+
+    @include r($lg) {
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100vh;
+    }
   }
 
   &__head {
     margin-right: 50px;
-    width: 100%;
+    width: 460px;
+    min-width: 460px;
     max-width: 460px;
+
+    @include r(1500) {
+      min-width: 420px;
+      max-width: 420px;
+    }
+
+    @include r($xl) {
+      margin-right: 20px;
+      min-width: 380px;
+      max-width: 380px;
+    }
+
+    @include r($lg) {
+      margin-right: 0;
+      margin-bottom: 30px;
+      width: fit-content;
+      min-width: fit-content;
+      max-width: fit-content;
+    }
+
+    @include r($md) {
+      margin-right: 0;
+      margin-bottom: 25px;
+      width: fit-content;
+      min-width: fit-content;
+      max-width: fit-content;
+    }
+  }
+
+  @include r(1500) {
+    padding-top: 18%;
+  }
+
+  @include r($xl) {
+    padding-top: 20%;
+  }
+
+  @include r($lg) {
+    padding-top: 0;
   }
 }
