@@ -315,6 +315,28 @@
 
       img {
         margin: 0 auto 35px;
+
+        @include r(1500) {
+          margin: 0 auto 30px;
+          width: 80px;
+          height: 80px;
+        }
+
+        @include r($xl) {
+          margin: 0 auto 20px;
+          width: 70px;
+          height: 70px;
+        }
+
+        @include r($xl) {
+          margin: 0 auto 15px;
+          width: 60px;
+          height: 60px;
+        }
+
+        @include r($sm) {
+          margin: 0 auto 15px 0;
+        }
       }
 
       h3 {
@@ -581,12 +603,14 @@
   color: $main;
 
   &::after {
-    content: url("../images/arrow-main-right.svg");
+    content: "";
     position: absolute;
     right: 0;
     top: 50%;
     width: 24px;
     height: 24px;
+    background-image: url("../images/arrow-main-right.svg");
+    background-size: contain;
     transform: translateY(-50%);
   }
 

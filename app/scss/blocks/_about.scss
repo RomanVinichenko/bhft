@@ -1,8 +1,15 @@
 .about {
-  background-image: url("../images/decor-expert1.svg");
-  background-position: center right 30%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: url("../images/decor1.svg");
+    position: absolute;
+    left: -200px;
+    top: 0;
+    z-index: -1;
+    opacity: 0.2;
+  }
 
   h1 {
     width: 460px;
@@ -11,6 +18,25 @@
 
     span {
       color: $main;
+    }
+
+    @include r(1500) {
+      width: 420px;
+      font-size: 64px;
+    }
+
+    @include r($xl) {
+      width: 360px;
+      font-size: 54px;
+    }
+
+    @include r($lg) {
+      width: fit-content;
+    }
+
+    @include r($md) {
+      font-size: 30px;
+      line-height: 1.3;
     }
   }
 
@@ -23,6 +49,27 @@
     span {
       color: $main;
     }
+
+    @include r(1500) {
+      margin-top: 80px;
+      font-size: 42px;
+    }
+
+    @include r(1300) {
+      margin-top: 60px;
+      font-size: 36px;
+    }
+
+    @include r($xl) {
+      margin-top: 40px;
+      font-size: 30px;
+    }
+
+    @include r($md) {
+      margin-top: 25px;
+      font-weight: 500;
+      font-size: 24px;
+    }
   }
 
   &__box {
@@ -33,6 +80,22 @@
 
       &:not(:last-child) {
         margin-bottom: 22px;
+
+        @include r($md) {
+          margin-bottom: 18px;
+        }
+      }
+
+      @include r($xl) {
+        font-size: 20px;
+      }
+
+      @include r($lg) {
+        font-size: 18px;
+      }
+
+      @include r($md) {
+        font-size: 16px;
       }
     }
   }
@@ -58,11 +121,48 @@
       margin-bottom: 25px;
       font-weight: 500;
       font-size: 48px;
+
+      @include r(1500) {
+        font-size: 42px;
+      }
+
+      @include r($xl) {
+        font-size: 36px;
+      }
+
+      @include r($lg) {
+        margin-bottom: 15px;
+        font-size: 30px;
+      }
     }
 
     p {
       font-weight: 500;
       font-size: 36px;
+
+      @include r(1500) {
+        font-size: 26px;
+      }
+
+      @include r($xl) {
+        font-size: 22px;
+      }
+
+      @include r($lg) {
+        font-size: 18px;
+      }
+    }
+
+    @include r($xl) {
+      max-width: 500px;
+    }
+
+    @include r($lg) {
+      max-width: 380px;
+    }
+
+    @include r($md) {
+      display: none;
     }
   }
 
@@ -75,9 +175,8 @@
       border: none;
       background-color: transparent;
 
-      img {
-        border-radius: 50%;
-        cursor: pointer;
+      @include r($md) {
+        margin-bottom: 0;
       }
     }
 
@@ -86,12 +185,71 @@
       font-size: 24px;
       text-align: center;
       text-transform: uppercase;
+
+      @include r($xl) {
+        font-size: 20px;
+      }
+
+      @include r($lg) {
+        font-size: 18px;
+      }
+
+      @include r($md) {
+        display: none;
+      }
+    }
+
+    &--big {
+      border-radius: 50%;
+      cursor: pointer;
+
+      @include r($xl) {
+        width: 160px;
+        height: 160px;
+      }
+
+      @include r($lg) {
+        width: 110px;
+        height: 110px;
+      }
+
+      @include r($sm) {
+        display: none;
+      }
+    }
+
+    &--small {
+      display: none;
+
+      @include r($sm) {
+        display: block;
+        width: 56px;
+        height: 56px;
+      }
     }
   }
 
   &--careers {
     margin-bottom: 0;
     background-image: url("../images/video-bg-careers.jpg");
+  }
+
+  @include r(1500) {
+    padding: 200px 0;
+  }
+
+  @include r($xl) {
+    margin-bottom: 120px;
+    padding: 150px 0;
+  }
+
+  @include r($lg) {
+    margin-bottom: 102px;
+    padding: 100px 0;
+  }
+
+  @include r($sm) {
+    padding: 95px 0;
   }
 }
 
@@ -102,44 +260,109 @@
     &::after {
       display: none;
     }
+
+    @include r($md) {
+      max-width: 100%;
+    }
+  }
+
+  @include r($xl) {
+    margin-bottom: 100px;
+  }
+
+  @include r($md) {
+    margin-bottom: 50px;
   }
 }
 
 .we-do__about {
   margin-bottom: 186px;
+
+  @include r(1500) {
+    margin-bottom: 140px;
+  }
+
+  @include r($md) {
+    flex-direction: column;
+    margin-bottom: 52px;
+  }
 }
 
 .we-box__about {
   p {
     margin-bottom: 0;
     font-size: 24px;
+
+    @include r($xl) {
+      font-size: 22px;
+    }
+
+    @include r($lg) {
+      font-size: 20px;
+    }
+
+    @include r($md) {
+      font-size: 18px;
+    }
   }
 }
 
 .team {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  justify-content: center;
+  grid-gap: 64px 50px;
+  grid-template-columns: 1fr 1fr 1fr;
 
   li {
-    margin-bottom: 64px;
-    width: 100%;
-    max-width: 460px;
-
     img {
       margin-bottom: 25px;
       object-fit: cover;
+
+      @include r($xl) {
+        margin-bottom: 15px;
+      }
     }
 
     h5 {
       margin-bottom: 10px;
       font-weight: 400;
       font-size: 24px;
+
+      @include r($xl) {
+        margin-bottom: 8px;
+        font-size: 20px;
+      }
+
+      @include r($md) {
+        margin-bottom: 5px;
+        font-size: 16px;
+      }
     }
 
     p {
       color: $secondary;
+
+      @include r($xl) {
+        font-size: 18px;
+      }
+
+      @include r($md) {
+        font-size: 14px;
+      }
     }
+  }
+
+  @include r($xl) {
+    grid-gap: 50px 35px;
+  }
+
+  @include r($lg) {
+    grid-gap: 35px 25px;
+  }
+
+  @include r($md) {
+    grid-gap: 25px 17px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -153,14 +376,87 @@
     text-align: center;
     text-transform: uppercase;
     color: $white;
+
+    @include r(1500) {
+      font-size: 48px;
+      line-height: 70px;
+    }
+
+    @include r($xl) {
+      margin-right: 40px;
+      font-size: 36px;
+      line-height: 50px;
+    }
+
+    @include r($lg) {
+      margin-right: 20px;
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    @include r($md) {
+      font-size: 16px;
+      line-height: 25px;
+    }
   }
 
   a {
     display: flex;
+    align-items: center;
     justify-content: center;
     padding: 80px 0;
     width: 100%;
     height: 100%;
+
+    @include r($xl) {
+      padding: 60px 0;
+    }
+
+    @include r($lg) {
+      padding: 50px 0;
+    }
+
+    @include r($lg) {
+      padding: 38px 0;
+    }
+  }
+
+  svg {
+    @include r(1500) {
+      width: 70px;
+      height: 70px;
+    }
+
+    @include r($xl) {
+      width: 50px;
+      height: 50px;
+    }
+
+    @include r($lg) {
+      width: 40px;
+      height: 40px;
+    }
+
+    @include r($md) {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  @include r(1500) {
+    margin-bottom: 200px;
+  }
+
+  @include r(1200) {
+    margin-bottom: 160px;
+  }
+
+  @include r($lg) {
+    margin-bottom: 120px;
+  }
+
+  @include r($md) {
+    margin-bottom: 50px;
   }
 }
 
@@ -171,7 +467,30 @@
   h2 {
     margin-right: 50px;
     width: 100%;
+    height: fit-content;
     max-width: 460px;
+
+    @include r(1500) {
+      max-width: 420px;
+      font-size: 52px;
+    }
+
+    @include r($xl) {
+      margin-right: 20px;
+      max-width: 350px;
+      font-size: 44px;
+    }
+
+    @include r($lg) {
+      max-width: 240px;
+      font-size: 34px;
+    }
+
+    @include r($md) {
+      margin: 0 0 25px;
+      max-width: 100%;
+      font-size: 24px;
+    }
   }
 
   span {
@@ -186,17 +505,94 @@
       line-height: 40px;
 
       &::after {
-        content: url("../images/blue-star.svg");
+        content: "";
         position: absolute;
         left: 0;
         top: 0;
         width: 40px;
         height: 40px;
+        background-image: url("../images/blue-star.svg");
+        background-size: contain;
+
+        @include r(1500) {
+          width: 35px;
+          height: 35px;
+        }
+
+        @include r(1300) {
+          width: 30px;
+          height: 30px;
+        }
+
+        @include r($md) {
+          width: 24px;
+          height: 24px;
+        }
       }
 
       &:not(:last-child) {
         margin-bottom: 50px;
+
+        @include r(1500) {
+          margin-bottom: 40px;
+        }
+
+        @include r($xl) {
+          margin-bottom: 30px;
+        }
+
+        @include r($md) {
+          margin-bottom: 25px;
+        }
       }
+
+      @include r(1500) {
+        font-size: 22px;
+        line-height: 30px;
+      }
+
+      @include r(1300) {
+        padding-left: 50px;
+      }
+
+      @include r($xl) {
+        font-size: 20px;
+      }
+
+      @include r($lg) {
+        padding-left: 45px;
+        font-size: 18px;
+      }
+
+      @include r($md) {
+        padding-left: 29px;
+        min-height: 24px;
+        font-size: 16px;
+        line-height: 1.15;
+      }
+    }
+  }
+
+  @include r(1500) {
+    margin-bottom: 120px;
+  }
+
+  @include r($md) {
+    flex-direction: column;
+    margin-bottom: 50px;
+    padding-top: 25px;
+    border-top: 1px solid $black;
+  }
+}
+
+.link-more__about {
+  @include r($md) {
+    padding-right: 43px;
+    line-height: 18px;
+
+    &::after {
+      width: 18px;
+      height: 18px;
     }
   }
 }
