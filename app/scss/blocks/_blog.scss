@@ -96,11 +96,6 @@
         margin-right: 15px;
       }
 
-      + .current {
-        color: $white;
-        background-color: $main;
-      }
-
       &:hover {
         background-color: #e3e8ff;
       }
@@ -108,6 +103,15 @@
       &:active {
         color: $white;
         background-color: #2d5bfe;
+      }
+    }
+
+    .current {
+      color: $white;
+      background-color: $main;
+
+      &:hover {
+        background-color: $main;
       }
     }
   }
