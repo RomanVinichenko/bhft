@@ -13,7 +13,7 @@
 <header class="header header-dark">
   <div class="container">
     <nav class="menu">
-      <a class="logo" href="index.html">
+      <a class="logo" href="#">
         <img src="images/logo-dark.svg" alt="Logo">
         <svg class="logo__star" width="40" height="38" viewBox="0 0 40 38" fill="none"
              xmlns="http://www.w3.org/2000/svg">
@@ -22,7 +22,7 @@
             fill="#1D4BEF"/>
         </svg>
       </a>
-      <ul>
+      <ul class="menu__list">
         <li>
           <a href="expertise.html">
             Expertise
@@ -34,12 +34,22 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="careers.html">
             Careers
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="vacancy-open.html">
+            Vac.op
+          </a>
+        </li>
+        <li>
+          <a href="article.html">
+            Article
+          </a>
+        </li>
+        <li>
+          <a href="contact.html">
             Contact
           </a>
         </li>
@@ -49,6 +59,9 @@
           </a>
         </li>
       </ul>
+      <button class="menu__burger">
+        <span></span>
+      </button>
     </nav>
   </div>
 </header>
@@ -84,7 +97,8 @@
       <div class="video__wrapper">
         <div class="video__play">
           <button>
-            <img src="images/video-play.svg" alt="Video play">
+            <img class="video__play--big" src="images/video-play.svg" alt="Video play">
+            <img class="video__play--small" src="images/video-play-small.svg" alt="Video play">
           </button>
           <span class="video__duration">2 MIN 45 SEC</span>
         </div>
@@ -106,6 +120,7 @@
       </div>
       <ul>
         <li>
+          <img src="images/work-icon-1.svg" alt="Work">
           <h3>Modern Worklife</h3>
           <p>
             We value our team’s vision and voice. The road to success can only happen when every single member of the
@@ -114,6 +129,7 @@
           </p>
         </li>
         <li>
+          <img src="images/work-icon-2.svg" alt="Work">
           <h3>Remote work</h3>
           <p>
             Enjoy working remotely from any point on earth. We will make sure you feel comfortable at work, regardless
@@ -122,6 +138,7 @@
           </p>
         </li>
         <li>
+          <img src="images/work-icon-3.svg" alt="Work">
           <h3>Learning & development</h3>
           <p>
             Experience challenging tasks that each day allow the team to continue growing and exploring new exciting
@@ -130,6 +147,7 @@
           </p>
         </li>
         <li>
+          <img src="images/work-icon-4.svg" alt="Work">
           <h3>Growth opportunity</h3>
           <p>
             We value your talent! Take the opportunity to show off your skill. We will provide you with all the
@@ -138,6 +156,7 @@
           </p>
         </li>
         <li>
+          <img src="images/work-icon-5.svg" alt="Work">
           <h3>Global company</h3>
           <p>
             Join a talented team of global experts, each with a unique background and unique skills that w adds to our
@@ -207,7 +226,6 @@
               <input type="checkbox">
               <span>Agree with <span>Terms and conditions</span></span>
             </label>
-
             <button class="button-link" type="submit">Sumbit</button>
           </form>
         </div>
@@ -219,54 +237,57 @@
 
 <footer class="footer">
   <div class="container">
-    <nav class="menu-footer">
-      <a href="#">
-        <img src="images/logo-white.svg" alt="Logo Footer">
-      </a>
-      <ul>
-        <li>
-          <a href="expertise.html">
-            Expertise
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            About
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            Careers
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            Contact
-          </a>
-        </li>
-        <li>
-          <a href="blog.html">
-            Blog
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div class="footer__info">
-      <p>© 2022 BHFT. All rights reserved.</p>
-      <ul>
-        <li>
-          <a href="#">Privacy Policy</a>
-        </li>
-        <li>
-          <a href="#">Terms of Use</a>
-        </li>
-        <li>
-          <a href="mailto:info@bhft.com">info@bhft.com</a>
-        </li>
-      </ul>
+    <div class="footer__container">
+      <nav class="menu-footer">
+        <a class="logo-footer" href="#">
+          <img src="images/logo-white.svg" alt="Logo Footer">
+        </a>
+        <ul>
+          <li>
+            <a href="expertise.html">
+              Expertise
+            </a>
+          </li>
+          <li>
+            <a href="about.html">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Careers
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Contact
+            </a>
+          </li>
+          <li>
+            <a href="blog.html">
+              Blog
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__info">
+        <p>© 2022 BHFT. All rights reserved.</p>
+        <ul>
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#">Terms of Use</a>
+          </li>
+          <li>
+            <a href="mailto:info@bhft.com">info@bhft.com</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </footer>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>-->
 <script src='js/main.js'></script>
