@@ -62,12 +62,15 @@
       }
     }
   }
+
   @include r($xl) {
     background-position: left top 50%;
   }
+
   @include r($lg) {
     background-position: left top 30%;
   }
+
   @include r($md) {
     background-position: left top 20%;
   }
@@ -85,6 +88,7 @@
     margin-bottom: 150px;
     padding-top: 50px;
     border-top: 2px solid $white;
+
     @include r($md) {
       flex-direction: column;
       margin-bottom: 25px;
@@ -103,27 +107,32 @@
     max-width: 460px;
     font-size: 43px;
     text-transform: uppercase;
+
     @include r(1500) {
-      font-size: 38px;
       max-width: 400px;
+      font-size: 38px;
     }
+
     @include r($xl) {
       font-size: 30px;
     }
+
     @include r($md) {
-      max-width: 100%;
       margin-right: 0;
-      font-size: 24px;
       margin-bottom: 10px;
+      max-width: 100%;
+      font-size: 24px;
     }
   }
 
   h5 {
     font-weight: 400;
     font-size: 24px;
+
     @include r(1500) {
       font-size: 20px;
     }
+
     @include r($md) {
       font-size: 16px;
     }
@@ -135,67 +144,79 @@
     grid-gap: 100px 50px;
     grid-template-columns: 1fr 1fr 1fr;
 
-    @include r($xl) {
-      grid-gap: 80px 40px;
-    }
-    @include r($md) {
-      grid-template-columns: 1fr;
-      grid-gap: 30px 0;
-    }
-
     li {
       img {
         margin: 0 auto 35px 0;
+
         @include r($xl) {
+          margin: 0 auto 20px 0;
           width: 70px;
           height: 70px;
-          margin: 0 auto 20px 0;
         }
+
         @include r($lg) {
+          margin: 0 auto 15px 0;
           width: 60px;
           height: 60px;
-          margin: 0 auto 15px 0;
         }
       }
+
       h3 {
         margin-bottom: 10px;
         font-weight: 600;
         font-size: 32px;
         text-transform: uppercase;
+
         @include r(1500) {
           font-size: 26px;
         }
+
         @include r(1300) {
           font-size: 20px;
         }
+
         @include r($lg) {
           font-size: 18px;
         }
+
         @include r($md) {
-          font-size: 16px;
-          font-weight: 500;
           margin-bottom: 5px;
+          font-weight: 500;
+          font-size: 16px;
         }
       }
 
       p {
         color: #a9a9a9;
+
         @include r(1500) {
           font-size: 18px;
         }
+
         @include r($xl) {
           font-size: 16px;
         }
+
         @include r($lg) {
           font-size: 14px;
         }
       }
+    }
+
+    @include r($xl) {
+      grid-gap: 80px 40px;
+    }
+
+    @include r($md) {
+      grid-gap: 30px 0;
+      grid-template-columns: 1fr;
     }
   }
 
   @include r(1500) {
     padding: 200px 0;
   }
+
   @include r($md) {
     padding: 50px 0 20px;
     background-image: none;
@@ -222,20 +243,24 @@
     span {
       color: $main;
     }
+
     @include r(1500) {
-      font-size: 58px;
       margin-bottom: 120px;
+      font-size: 58px;
     }
+
     @include r($xl) {
-      font-size: 50px;
       margin-bottom: 80px;
+      font-size: 50px;
     }
+
     @include r($lg) {
       font-size: 42px;
     }
+
     @include r($md) {
-      font-size: 24px;
       margin-bottom: 25px;
+      font-size: 24px;
     }
   }
 
@@ -262,22 +287,27 @@
       h3 {
         line-height: 55px;
         text-transform: uppercase;
+
         @include r(1500) {
           font-size: 26px;
         }
       }
+
       @include r(1500) {
         margin-bottom: 30px;
         padding-bottom: 30px;
       }
     }
   }
+
   @include r(1500) {
     padding: 120px 0;
   }
+
   @include r($xl) {
     padding: 80px 0;
   }
+
   @include r($md) {
     padding: 35px 0;
   }
@@ -296,6 +326,7 @@
     z-index: -1;
     width: 100%;
     height: 100%;
+
     @include r($md) {
       display: none;
     }
@@ -304,6 +335,7 @@
   &__photo {
     margin-right: 30px;
     min-width: 350px;
+
     @include r($md) {
       display: none;
     }
@@ -321,6 +353,7 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+
     @include r($md) {
       flex-direction: column;
     }
@@ -355,17 +388,21 @@
       @include r(1700) {
         font-size: 40px;
       }
+
       @include r(1600) {
         font-size: 30px;
       }
+
       @include r($md) {
-        font-size: 16px;
         margin-bottom: 15px;
+        font-size: 16px;
       }
     }
+
     @include r(1700) {
       max-width: 850px;
     }
+
     @include r($md) {
       margin-top: 0;
       max-width: 100%;
@@ -392,6 +429,7 @@
       top: 0;
       width: 75px;
       height: 75px;
+
       @include r(1500) {
         transform: scale(0.8);
       }
@@ -400,18 +438,21 @@
         display: none;
       }
     }
+
     @include r(1700) {
-      font-size: 52px;
       margin: 0 0 200px auto;
+      font-size: 52px;
     }
+
     @include r(1500) {
-      font-size: 38px;
       margin: 0 0 100px auto;
+      font-size: 38px;
     }
+
     @include r($md) {
-      font-size: 16px;
-      padding-right: 0;
       margin: 0 0 50px auto;
+      padding-right: 0;
+      font-size: 16px;
       line-height: 1.15;
     }
   }
@@ -438,22 +479,24 @@
         font-size: 24px;
         line-height: 1.15;
         color: #a9a9a9;
+
         @include r($md) {
           font-size: 14px;
         }
       }
+
       @include r($md) {
-        padding: 0 0 10px;
-        font-size: 14px;
-        border-bottom: 1px solid $white;
         margin-bottom: 35px;
+        padding: 0 0 10px;
+        border-bottom: 1px solid $white;
+        font-size: 14px;
       }
     }
 
     .connect__upload {
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
       margin-bottom: 35px;
 
       span {
@@ -461,6 +504,7 @@
         font-size: 24px;
         line-height: 1.15;
         color: #a9a9a9;
+
         @include r($md) {
           font-size: 14px;
         }
@@ -484,6 +528,7 @@
           width: 24px;
           height: 24px;
         }
+
         @include r($md) {
           font-size: 14px;
         }
@@ -504,16 +549,18 @@
         width: 24px;
         height: 24px;
         background-color: transparent;
+
         @include r($md) {
+          margin: 0 5px 0 4px;
           width: 20px;
           height: 20px;
-          margin: 0 5px 0 4px;
         }
       }
 
       span {
         color: $main;
       }
+
       @include r($md) {
         margin: 0 0 35px;
         font-size: 14px;
@@ -526,9 +573,11 @@
       }
     }
   }
+
   @include r(1700) {
     padding: 130px 0 180px;
   }
+
   @include r($md) {
     padding: 50px 0;
   }
