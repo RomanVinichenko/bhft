@@ -714,31 +714,37 @@
 
   h2 {
     margin-right: 50px;
-    width: 100%;
+    width: 460px;
+    min-width: 460px;
     max-width: 460px;
 
-    @include r(1600) {
-      margin-right: 30px;
-      max-width: 360px;
-      font-size: 46px;
-    }
-
-    @include r(1300) {
-      max-width: 310px;
-      font-size: 42px;
+    @include r(1500) {
+      margin-right: 40px;
+      width: 420px;
+      min-width: 420px;
+      max-width: 420px;
     }
 
     @include r($xl) {
-      margin-right: 15px;
-      font-size: 36px;
+      margin-right: 30px;
+      width: 360px;
+      min-width: 360px;
+      max-width: 360px;
+      font-size: 44px;
     }
 
     @include r($lg) {
-      max-width: 250px;
+      margin-right: 30px;
+      width: 280px;
+      min-width: 280px;
+      max-width: 280px;
+      font-size: 30px;
     }
 
-    @include r($md) {
+    @include r($lg) {
       margin: 0 0 25px;
+      width: 100%;
+      min-width: 100%;
       max-width: 100%;
       font-size: 24px;
     }
