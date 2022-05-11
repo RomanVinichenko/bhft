@@ -344,9 +344,43 @@
   &__text {
     h4 {
       margin-right: 50px;
+      width: 460px;
+      min-width: 460px;
       max-width: 460px;
       font-weight: 500;
       font-size: 36px;
+
+      @include r(1500) {
+        margin-right: 40px;
+        width: 420px;
+        min-width: 420px;
+        max-width: 420px;
+        font-size: 30px;
+      }
+
+      @include r($xl) {
+        margin-right: 30px;
+        width: 360px;
+        min-width: 360px;
+        max-width: 360px;
+      }
+
+      @include r($lg) {
+        margin-right: 30px;
+        width: 280px;
+        min-width: 280px;
+        max-width: 280px;
+        font-size: 30px;
+      }
+
+      @include r($md) {
+        margin-right: 0;
+        margin-bottom: 25px;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        font-size: 24px;
+      }
     }
   }
 
@@ -480,15 +514,25 @@
         line-height: 1.15;
         color: #a9a9a9;
 
+        @include r($lg) {
+          font-size: 16px;
+        }
+
         @include r($md) {
           font-size: 14px;
         }
       }
 
+      @include r($lg) {
+        margin-bottom: 45px;
+        padding: 0 0 12px;
+        border-bottom: 1px solid $white;
+        font-size: 16px;
+      }
+
       @include r($md) {
         margin-bottom: 35px;
         padding: 0 0 10px;
-        border-bottom: 1px solid $white;
         font-size: 14px;
       }
     }
@@ -504,6 +548,10 @@
         font-size: 24px;
         line-height: 1.15;
         color: #a9a9a9;
+
+        @include r($lg) {
+          font-size: 16px;
+        }
 
         @include r($md) {
           font-size: 14px;
