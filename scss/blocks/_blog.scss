@@ -1,15 +1,15 @@
 .blog {
   position: relative;
   padding: 300px 0 250px;
+  overflow: hidden;
 
   &::after {
-    content: url("../images/decor-expert1.svg");
+    content: url("../images/decor1.svg");
     position: absolute;
-    right: 70%;
+    left: -200px;
     top: 0;
     z-index: -1;
-    width: 100%;
-    height: 100%;
+    opacity: 0.2;
   }
 
   h1 {
@@ -19,6 +19,18 @@
     span {
       color: $main;
     }
+
+    @include r($xl) {
+      font-size: 50px;
+    }
+
+    @include r($md) {
+      font-size: 30px;
+    }
+  }
+
+  @include r($md) {
+    padding: 159px 0 48px;
   }
 }
 
@@ -35,6 +47,10 @@
 
       &:not(:last-child) {
         margin-bottom: 50px;
+
+        @include r($md) {
+          margin-bottom: 20px;
+        }
       }
 
       img {
@@ -43,19 +59,71 @@
         max-width: 460px;
         max-height: 310px;
         object-fit: cover;
+
+        @include r($xl) {
+          margin-right: 30px;
+          max-width: 400px;
+        }
+
+        @include r($lg) {
+          max-width: 380px;
+        }
+
+        @include r($md) {
+          margin-right: 0;
+          margin-bottom: 10px;
+          min-height: 150px;
+          max-width: 100%;
+        }
       }
 
       span {
         display: block;
         margin-bottom: 25px;
         color: $secondary;
+
+        @include r(1600) {
+          margin-bottom: 15px;
+          font-size: 18px;
+        }
+
+        @include r($md) {
+          margin-bottom: 10px;
+          font-size: 14px;
+        }
       }
 
       h4 {
         margin-bottom: 25px;
         font-weight: 500;
         font-size: 36px;
+
+        @include r(1600) {
+          margin-bottom: 20px;
+          font-size: 28px;
+        }
+
+        @include r($lg) {
+          font-size: 24px;
+        }
+
+        @include r($md) {
+          margin-bottom: 10px;
+          font-size: 16px;
+        }
       }
+
+      @include r($md) {
+        flex-direction: column;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $black;
+      }
+    }
+
+    @include r($md) {
+      margin-bottom: 50px;
+      padding-top: 25px;
+      border-top: 1px solid $black;
     }
   }
 }
@@ -94,6 +162,10 @@
 
       &:not(:last-child) {
         margin-right: 15px;
+
+        @include r($md) {
+          margin-right: 8px;
+        }
       }
 
       &:hover {
@@ -103,6 +175,12 @@
       &:active {
         color: $white;
         background-color: #2d5bfe;
+      }
+
+      @include r($md) {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
       }
     }
 
