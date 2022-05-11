@@ -1,5 +1,6 @@
 .article-top {
   position: relative;
+  overflow: hidden;
 
   &::after {
     content: url("../images/decor1.svg");
@@ -184,6 +185,7 @@
 
   &--bg {
     position: relative;
+    overflow: hidden;
 
     &::after {
       content: url("../images/decor1.svg");

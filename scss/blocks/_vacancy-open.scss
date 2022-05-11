@@ -102,7 +102,7 @@
         font-size: 30px;
       }
 
-      @include r($lg) {
+      @include r($md) {
         margin-right: 0;
         margin-bottom: 25px;
         width: 100%;
