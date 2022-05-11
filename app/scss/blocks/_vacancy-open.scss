@@ -313,6 +313,10 @@
       &::placeholder {
         color: $secondary;
       }
+
+      @include r($md) {
+        border-bottom: 1px solid $black;
+      }
     }
   }
 

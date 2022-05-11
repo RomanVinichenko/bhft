@@ -1,20 +1,32 @@
 .contact {
   position: relative;
   padding: 300px 0 250px;
+  overflow: hidden;
 
   &::after {
-    content: url("../images/decor-expert1.svg");
+    content: url("../images/decor1.svg");
     position: absolute;
-    right: 70%;
+    left: -200px;
     top: 0;
     z-index: -1;
-    width: 100%;
-    height: 100%;
+    opacity: 0.2;
   }
 
   h1 {
     font-family: "Neue Machina", sans-serif;
     text-transform: uppercase;
+
+    @include r($xl) {
+      font-size: 50px;
+    }
+
+    @include r($md) {
+      font-size: 30px;
+    }
+  }
+
+  @include r($md) {
+    padding: 159px 0 48px;
   }
 }
 
@@ -26,10 +38,43 @@
     border-bottom: 2px solid $black;
 
     h4 {
-      width: 100%;
+      width: 460px;
+      min-width: 460px;
       max-width: 460px;
       font-weight: 500;
       font-size: 36px;
+
+      @include r(1500) {
+        margin-right: 40px;
+        width: 420px;
+        min-width: 420px;
+        max-width: 420px;
+        font-size: 28px;
+      }
+
+      @include r($xl) {
+        margin-right: 30px;
+        width: 360px;
+        min-width: 360px;
+        max-width: 360px;
+        font-size: 26px;
+      }
+
+      @include r($lg) {
+        margin-right: 30px;
+        width: 280px;
+        min-width: 280px;
+        max-width: 280px;
+        font-size: 24px;
+      }
+
+      @include r($md) {
+        margin-right: 0;
+        width: fit-content;
+        min-width: fit-content;
+        max-width: fit-content;
+        font-size: 16px;
+      }
     }
 
     a {
@@ -38,10 +83,51 @@
       font-size: 48px;
       text-transform: uppercase;
       color: $main;
+
+      @include r(1500) {
+        font-size: 28px;
+      }
+
+      @include r($xl) {
+        font-size: 26px;
+      }
+
+      @include r($lg) {
+        font-size: 22px;
+      }
+
+      @include r($md) {
+        font-size: 16px;
+      }
     }
 
-    &:last-child {
-      border-top: none;
+    @include r(1500) {
+      padding: 40px 0;
+    }
+
+    @include r($xl) {
+      padding: 30px 0;
+    }
+
+    @include r($md) {
+      padding: 25px 0;
+      border-top: 1px solid $black;
+      border-bottom: 1px solid $black;
+    }
+  }
+
+  &__item:first-child {
+    @include r($md) {
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__item:last-child {
+    border-top: none;
+
+    @include r($md) {
+      flex-direction: column;
     }
   }
 
@@ -55,12 +141,46 @@
     line-height: 55px;
 
     &::after {
-      content: url("../images/arrow-main-diagonal.svg");
+      content: "";
       position: absolute;
       right: 0;
       top: 0;
-      width: 55px;
-      height: 55px;
+      width: 100%;
+      height: 100%;
+      background-image: url("../images/arrow-main-diagonal.svg");
+      background-position: top right;
+      background-size: 55px;
+      background-repeat: no-repeat;
+
+      @include r($xl) {
+        background-size: 45px;
+      }
+
+      @include r($lg) {
+        background-size: 35px;
+      }
+
+      @include r($md) {
+        background-size: 30px;
+      }
     }
+
+    @include r($xl) {
+      line-height: 45px;
+    }
+
+    @include r($lg) {
+      line-height: 35px;
+    }
+
+    @include r($md) {
+      line-height: 30px;
+    }
+  }
+}
+
+#h4link {
+  @include r($md) {
+    margin-bottom: 15px;
   }
 }
