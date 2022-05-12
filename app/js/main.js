@@ -28,6 +28,7 @@ const removeClass = () => {
 
 menuBurger.addEventListener('click', function () {
   menuList.classList.toggle('menu__list--active');
+  this.classList.toggle('menu__burger--active');
 });
 
 window.addEventListener('scroll', function () {
