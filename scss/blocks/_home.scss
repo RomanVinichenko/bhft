@@ -493,17 +493,24 @@
 
     li {
       position: relative;
-      margin-bottom: 40px;
       padding-bottom: 40px;
       border-bottom: 2px solid $black;
 
       &::after {
-        content: url("../images/arrow-black-diagonal.svg");
+        content: "";
         position: absolute;
         right: 0;
         top: 0;
         width: 55px;
         height: 55px;
+        background-image: url("../images/arrow-black-diagonal.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        @include r($md) {
+          width: 18px;
+          height: 18px;
+        }
       }
 
       h3 {
@@ -517,6 +524,7 @@
         @include r($md) {
           font-weight: 500;
           font-size: 16px;
+          line-height: 1.15;
         }
       }
 
@@ -530,14 +538,24 @@
         display: none;
       }
 
+      &:not(:last-child) {
+        margin-bottom: 40px;
+
+        @include r($md) {
+          margin-bottom: 20px;
+        }
+      }
+
       @include r($md) {
-        margin-bottom: 20px;
         padding-bottom: 20px;
+        border-bottom: 1px solid $black;
       }
     }
 
     @include r($md) {
+      margin-bottom: 25px;
       padding-top: 20px;
+      border-top: 1px solid $black;
     }
   }
 

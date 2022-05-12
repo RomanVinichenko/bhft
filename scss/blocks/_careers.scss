@@ -264,42 +264,6 @@
     }
   }
 
-  ul {
-    margin-bottom: 50px;
-    padding-top: 40px;
-    border-top: 2px solid $black;
-
-    li {
-      position: relative;
-      margin-bottom: 40px;
-      padding-bottom: 40px;
-      border-bottom: 2px solid $black;
-
-      &::after {
-        content: url("../images/arrow-black-diagonal.svg");
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 55px;
-        height: 55px;
-      }
-
-      h3 {
-        line-height: 55px;
-        text-transform: uppercase;
-
-        @include r(1500) {
-          font-size: 26px;
-        }
-      }
-
-      @include r(1500) {
-        margin-bottom: 30px;
-        padding-bottom: 30px;
-      }
-    }
-  }
-
   @include r(1500) {
     padding: 120px 0;
   }

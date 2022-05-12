@@ -49,7 +49,6 @@
     z-index: 8;
     display: flex;
     padding-top: 8px;
-    transition: padding-top 0.2s, align-items 0.2s;
 
     li + li {
       margin-left: 50px;
@@ -123,8 +122,8 @@
       overflow: hidden;
       text-align: right;
       background-color: $bg;
-      transform: translateY(-200%);
-      transition: transform 0.5s;
+      transform: translate(-100%, 0);
+      transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
 
       &::after {
         content: url("../images/decor1.svg");
@@ -135,6 +134,12 @@
         width: 100%;
         height: 100%;
       }
+    }
+  }
+
+  &__list--careers {
+    @include r($lg) {
+      background-color: #171717;
     }
   }
 
@@ -150,26 +155,24 @@
     background-color: transparent;
     cursor: pointer;
 
+    &::after,
     &::before {
       content: "";
       position: absolute;
       left: 4px;
-      bottom: 8px;
-      width: 22px;
       height: 2px;
       background-color: $main;
-      transition: all 0.2s;
+      transition: all 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
+
+    &::before {
+      bottom: 8px;
+      width: 22px;
     }
 
     &::after {
-      content: "";
-      position: absolute;
-      left: 4px;
       top: 8px;
       width: 24px;
-      height: 2px;
-      background-color: $main;
-      transition: all 0.2s;
     }
 
     span {
@@ -183,7 +186,7 @@
       font-size: 0;
       background-color: $main;
       transform: translateY(-50%);
-      transition: opacity 0.2s;
+      transition: opacity 0.4s;
     }
 
     @include r($lg) {
@@ -192,17 +195,19 @@
   }
 
   &__burger--active {
-    &::before {
+    &::before,
+    &::after {
       left: 5px;
-      bottom: 15px;
       width: 22px;
+    }
+
+    &::before {
+      bottom: 15px;
       transform: rotate(45deg);
     }
 
     &::after {
-      left: 5px;
       top: 15px;
-      width: 22px;
       transform: rotate(-45deg);
     }
 
@@ -218,7 +223,18 @@
 }
 
 .menu__list--active {
-  transform: translateY(0);
+  transform: none;
+
+  //$list: 1.2s, 1.3s, 1.4s, 1.5s, 1.6s, 1.7s;
+  //
+  //li {
+  //  @for $i from 1 through length($list) {
+  //    &:nth-child(#{$i}) {
+  //      animation-name: menu-move;
+  //      animation-duration: ($list, $i);
+  //    }
+  //  }
+  //}
 }
 
 .logo {
@@ -279,5 +295,15 @@
   @include r($lg) {
     width: 34px;
     height: 34px;
+  }
+}
+
+@keyframes menu-move {
+  0% {
+    transform: translateX(-100px);
+  }
+
+  100% {
+    transform: translateX(0);
   }
 }
