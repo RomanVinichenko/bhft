@@ -136,28 +136,39 @@
     justify-content: center;
 
     li {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      border: 1px solid $main;
-      border-radius: 50%;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 40px;
-      background-color: $white;
-      transition: background-color 0.2s, color 0.2s;
-
       a {
-        display: block;
-        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 40px;
         height: 40px;
+        border: 1px solid $main;
         border-radius: 50%;
         font-weight: 500;
         font-size: 20px;
         line-height: 40px;
         text-align: center;
+        color: $black;
+        background-color: $white;
+        transition: background-color 0.2s, color 0.2s;
+
+        &:hover {
+          background-color: #e3e8ff;
+        }
+
+        &:active {
+          color: $white;
+          background-color: #2d5bfe;
+        }
+
+        @include r($md) {
+          width: 30px;
+          height: 30px;
+          font-size: 16px;
+          line-height: 30px;
+        }
       }
 
       &:not(:last-child) {
@@ -167,29 +178,21 @@
           margin-right: 8px;
         }
       }
-
-      &:hover {
-        background-color: #e3e8ff;
-      }
-
-      &:active {
-        color: $white;
-        background-color: #2d5bfe;
-      }
-
-      @include r($md) {
-        width: 30px;
-        height: 30px;
-        font-size: 16px;
-      }
     }
 
     .current {
-      color: $white;
-      background-color: $main;
-
-      &:hover {
+      a {
+        color: $white;
         background-color: $main;
+
+        &:hover {
+          background-color: $main;
+        }
+
+        &:active {
+          color: $white;
+          background-color: #2d5bfe;
+        }
       }
     }
   }
