@@ -286,7 +286,7 @@
 
 .benefit {
   position: relative;
-  margin-bottom: 177px;
+  margin-bottom: 250px;
 
   &::after {
     content: "";
@@ -466,7 +466,7 @@
 
 .job {
   position: relative;
-  padding: 332px 0 160px;
+  padding: 250px 0;
 
   &::after {
     content: "";
@@ -508,8 +508,8 @@
         background-repeat: no-repeat;
 
         @include r($md) {
-          width: 18px;
-          height: 18px;
+          width: 24px;
+          height: 24px;
         }
       }
 
@@ -522,9 +522,8 @@
         }
 
         @include r($md) {
-          font-weight: 500;
           font-size: 16px;
-          line-height: 1.15;
+          line-height: 24px;
         }
       }
 
@@ -542,7 +541,7 @@
         margin-bottom: 40px;
 
         @include r($md) {
-          margin-bottom: 20px;
+          margin-bottom: 18px;
         }
       }
 
@@ -554,7 +553,7 @@
 
     @include r($md) {
       margin-bottom: 25px;
-      padding-top: 20px;
+      padding-top: 18px;
       border-top: 1px solid $black;
     }
   }
@@ -575,7 +574,6 @@
   h2 {
     margin-right: 50px;
     width: 100%;
-    max-width: 460px;
 
     @include r(1600) {
       max-width: 400px;
@@ -641,7 +639,7 @@
 }
 
 .news {
-  margin-bottom: 282px;
+  margin-bottom: 200px;
 
   &::after {
     display: none;
@@ -771,7 +769,6 @@
   }
 
   span {
-    display: block;
     color: $main;
 
     @include r($md) {
@@ -784,16 +781,6 @@
 
     ul {
       margin-bottom: 50px;
-    }
-  }
-
-  &--article {
-    margin-bottom: 200px;
-
-    h2 {
-      span {
-        display: inline;
-      }
     }
   }
 
