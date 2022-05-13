@@ -96,14 +96,14 @@
   <section class="video video--careers">
     <div class="container">
       <div class="video__wrapper">
-        <div class="video__play">
+        <div class="video__play wow">
           <button>
             <img class="video__play--big" src="images/video-play.svg" alt="Video play">
             <img class="video__play--small" src="images/video-play-small.svg" alt="Video play">
           </button>
           <span class="video__duration">2 MIN 45 SEC</span>
         </div>
-        <div class="video__inner">
+        <div class="video__inner wow">
           <h4>Betterhand Financial Technologies</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac eget at non quam ultricies purus tincidunt.
             Phasellus posuere mauris sed aenean vitae fringilla mus.</p>
@@ -114,13 +114,13 @@
 
   <section class="work">
     <div class="container">
-      <div class="work__wrapper">
+      <div class="work__wrapper wow">
         <h2>Working at <span>BHFT</span></h2>
         <h5>There’s life at work and life outside of work. We want everyone to be healthy, travel often, get time to
           give back, and have the financial resources and support they need.</h5>
       </div>
       <ul>
-        <li>
+        <li class="wow">
           <img src="images/work-icon-1.svg" alt="Work">
           <h3>Modern Worklife</h3>
           <p>
@@ -129,7 +129,7 @@
             competitive employment packages with awesome perks.
           </p>
         </li>
-        <li>
+        <li class="wow">
           <img src="images/work-icon-2.svg" alt="Work">
           <h3>Remote work</h3>
           <p>
@@ -138,7 +138,7 @@
             paperwork. We value your choice, responsibility, and results.
           </p>
         </li>
-        <li>
+        <li class="wow">
           <img src="images/work-icon-3.svg" alt="Work">
           <h3>Learning & development</h3>
           <p>
@@ -147,7 +147,7 @@
             solutions. As the trading market continues to evolve, our solutions maintain their edge.
           </p>
         </li>
-        <li>
+        <li class="wow">
           <img src="images/work-icon-4.svg" alt="Work">
           <h3>Growth opportunity</h3>
           <p>
@@ -156,7 +156,7 @@
             the sky is the limit.
           </p>
         </li>
-        <li>
+        <li class="wow">
           <img src="images/work-icon-5.svg" alt="Work">
           <h3>Global company</h3>
           <p>
@@ -169,35 +169,35 @@
     </div>
   </section>
 
-  <div class="pic-block">
+  <div class="pic-block wow">
     <img src="images/pic-block.jpg" alt="Programmer">
   </div>
 
   <section class="job job-careers">
     <div class="container">
-      <div class="job__inner">
+      <div class="job__inner job-careers__inner wow">
         <h2>Opportunities are always <span>OPEN!</span></h2>
         <ul>
-          <li>
+          <li class="wow">
             <h3>Head of Development</h3>
           </li>
-          <li>
+          <li class="wow">
             <h3>Senior Product Manager</h3>
           </li>
-          <li>
+          <li class="wow">
             <h3>Senior BackEnd Engineer</h3>
           </li>
-          <li>
+          <li class="wow">
             <h3>Senior System Engineer / DevOps</h3>
           </li>
-          <li>
+          <li class="wow">
             <h3>Senior Julia Lang Engineer</h3>
           </li>
-          <li>
+          <li class="wow">
             <h3>Project Manager</h3>
           </li>
         </ul>
-        <a class="button-link" href="#">Show more</a>
+        <a class="button-link wow" href="#">Show more</a>
       </div>
     </div>
   </section>
@@ -213,13 +213,13 @@
               <p>Head of HR</p>
             </div>
           </div>
-          <img class="connect__photo-desktop" src="images/connect.jpg" alt="Connect">
+          <img class="connect__photo-desktop wow" src="images/connect.jpg" alt="Connect">
         </div>
-        <div class="connect__info">
+        <div class="connect__info wow">
           <h3 class="blockquote">Haven't found what you are looking for? Then, let our <span>talent acquisition team leader</span>
             Valerie know about your talents!</h3>
           <a class="connect__link" href="#">JOB@BHFT.COM</a>
-          <form class="form">
+          <form class="form wow">
             <input type="text" placeholder="Name">
             <input type="email" placeholder="Email">
             <label class="connect__upload">
@@ -240,10 +240,9 @@
       </div>
     </div>
   </section>
-
 </main>
 
-<footer class="footer">
+<footer class="footer wow">
   <div class="container">
     <div class="footer__container">
       <nav class="menu-footer">
@@ -296,8 +295,11 @@
   </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 <script src='js/main.js'></script>
 </body>
 

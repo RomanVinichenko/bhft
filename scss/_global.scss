@@ -118,6 +118,10 @@ h3 {
       padding-top: 160px;
       min-height: fit-content;
     }
+
+    @include r($md) {
+      margin-bottom: 50px;
+    }
   }
 
   &__head {
