@@ -648,9 +648,9 @@
 }
 
 .connect--contact {
-  margin-top: 0;
-  width: 100%;
-  max-width: 970px;
+  &::before {
+    display: none;
+  }
 
   form {
     width: 100%;
@@ -659,6 +659,18 @@
 
 .connect--vacancy {
   padding: 0 0 200px;
+}
+
+.connect__info--contact {
+  margin-top: 0;
+  width: 100%;
+  max-width: 970px;
+
+  .form {
+    input {
+      border-bottom: 2px solid $black;
+    }
+  }
 }
 
 .connect__wrapper--vacancy {
