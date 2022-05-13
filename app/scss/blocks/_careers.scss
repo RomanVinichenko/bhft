@@ -66,8 +66,9 @@
     top: 50%;
     z-index: -1;
     height: fit-content;
-    max-width: 80%;
+    max-width: 70%;
     transform: translateY(-50%);
+    animation: appear 1.5s;
 
     @include r($lg) {
       top: 10%;
@@ -89,6 +90,7 @@
     margin-bottom: 150px;
     padding-top: 50px;
     border-top: 2px solid $white;
+    animation: appear 1.5s;
 
     @include r($md) {
       flex-direction: column;
@@ -202,6 +204,26 @@
           font-size: 14px;
         }
       }
+
+      &:nth-child(1) {
+        animation: appear 1.5s;
+      }
+
+      &:nth-child(2) {
+        animation: appear 1.6s;
+      }
+
+      &:nth-child(3) {
+        animation: appear 1.7s;
+      }
+
+      &:nth-child(4) {
+        animation: appear 1.8s;
+      }
+
+      &:nth-child(5) {
+        animation: appear 1.9s;
+      }
     }
 
     @include r($xl) {
@@ -221,6 +243,8 @@
 }
 
 .pic-block {
+  animation: appear 1.5s;
+
   img {
     width: 100%;
     max-height: 750px;
@@ -260,12 +284,16 @@
     }
   }
 
+  &__inner {
+    animation: appear 1.5s;
+  }
+
   @include r($xl) {
     padding: 80px 0;
   }
 
   @include r($md) {
-    padding: 35px 0;
+    padding: 50px 0;
   }
 }
 
@@ -330,6 +358,7 @@
 
   &__photo-desktop {
     display: block;
+    animation: appear 1.5s;
 
     @include r($md) {
       display: none;
@@ -391,6 +420,7 @@
   &__info {
     margin-top: 170px;
     max-width: 970px;
+    animation: appear 1.7s;
 
     h3 {
       position: relative;
@@ -489,6 +519,7 @@
   .form {
     display: flex;
     flex-direction: column;
+    animation: appear 1.9s;
 
     input {
       margin-bottom: 50px;
