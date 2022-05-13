@@ -90,17 +90,13 @@
         line-height: 1.3;
 
         &:not(:last-child) {
-          margin-bottom: 50px;
+          margin-bottom: 35px;
 
           @include h(750) {
-            margin-bottom: 30px;
-          }
-
-          @include h(650) {
             margin-bottom: 20px;
           }
 
-          @include h(550) {
+          @include h(650) {
             margin-bottom: 5px;
           }
         }
@@ -131,6 +127,7 @@
         left: -200px;
         top: 0;
         z-index: -1;
+        opacity: 0.2;
         width: 100%;
         height: 100%;
       }
@@ -225,16 +222,59 @@
 .menu__list--active {
   transform: none;
 
-  //$list: 1.2s, 1.3s, 1.4s, 1.5s, 1.6s, 1.7s;
-  //
-  //li {
-  //  @for $i from 1 through length($list) {
-  //    &:nth-child(#{$i}) {
-  //      animation-name: menu-move;
-  //      animation-duration: ($list, $i);
-  //    }
-  //  }
-  //}
+  li {
+    &:nth-child(1) {
+      animation: menu-move 0.6s;
+    }
+
+    &:nth-child(2) {
+      animation: menu-move 0.65s;
+    }
+
+    &:nth-child(3) {
+      animation: menu-move 0.7s;
+    }
+
+    &:nth-child(4) {
+      animation: menu-move 0.75s;
+    }
+
+    &:nth-child(5) {
+      animation: menu-move 0.8s;
+    }
+
+    &:nth-child(6) {
+      animation: menu-move 0.85s;
+    }
+
+    &:nth-child(7) {
+      animation: menu-move 0.9s;
+    }
+
+    &:nth-child(8) {
+      animation: menu-move 0.95s;
+    }
+
+    &:nth-child(9) {
+      animation: menu-move 1s;
+    }
+
+    &:nth-child(10) {
+      animation: menu-move 1.05s;
+    }
+
+    &:nth-child(11) {
+      animation: menu-move 1.1s;
+    }
+
+    &:nth-child(12) {
+      animation: menu-move 1.15s;
+    }
+
+    &:nth-child(13) {
+      animation: menu-move 1.2s;
+    }
+  }
 }
 
 .logo {
@@ -300,7 +340,7 @@
 
 @keyframes menu-move {
   0% {
-    transform: translateX(-100px);
+    transform: translateX(-150px);
   }
 
   100% {
