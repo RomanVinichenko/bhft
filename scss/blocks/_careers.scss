@@ -1,8 +1,5 @@
 .careers {
-  background-image: url("../images/map-careers.svg");
-  background-position: center left;
-  background-size: contain;
-  background-repeat: no-repeat;
+  position: relative;
 
   h4 {
     margin-top: 50px;
@@ -63,16 +60,20 @@
     }
   }
 
-  @include r($xl) {
-    background-position: left top 50%;
-  }
+  &__animation {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -1;
+    height: fit-content;
+    max-width: 80%;
+    transform: translateY(-50%);
 
-  @include r($lg) {
-    background-position: left top 30%;
-  }
-
-  @include r($md) {
-    background-position: left top 20%;
+    @include r($lg) {
+      top: 10%;
+      max-width: 100%;
+      transform: translateY(0);
+    }
   }
 }
 
