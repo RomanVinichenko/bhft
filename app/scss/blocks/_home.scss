@@ -597,7 +597,7 @@
   }
 
   @include r(1600) {
-    padding: 250px 0 160px;
+    padding: 250px 0;
   }
 
   @include r($md) {
