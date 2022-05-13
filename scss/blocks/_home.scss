@@ -522,6 +522,7 @@
         }
 
         @include r($md) {
+          padding-right: 40px;
           font-size: 16px;
           line-height: 24px;
         }
@@ -576,13 +577,11 @@
     width: 100%;
 
     @include r(1600) {
-      max-width: 400px;
       font-size: 46px;
     }
 
     @include r(1300) {
       margin-right: 30px;
-      max-width: 320px;
       font-size: 42px;
     }
 
@@ -591,13 +590,8 @@
       font-size: 36px;
     }
 
-    @include r($lg) {
-      max-width: 240px;
-    }
-
     @include r($md) {
       margin: 0 0 25px;
-      max-width: 100%;
       font-size: 24px;
     }
   }
