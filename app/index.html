@@ -74,6 +74,7 @@
 <main class="main">
 
   <section class="start">
+    <lottie-player class="start__lottie" src="https://assets7.lottiefiles.com/private_files/lf30_8zkfptqx.json" background="transparent" speed="1" loop autoplay></lottie-player>
     <div class="container">
       <div class="start__wrapper">
         <h1><span>Betterhand Financial Technologies</span> - state of the art algorithmic trading solutions provider.
@@ -83,8 +84,8 @@
   </section>
 
   <div class="container">
-    <section class="we-do">
-      <ul class="we-do__items">
+    <section class="we-do wow">
+      <ul class="we-do__items wow">
         <li>
           <h4>500+</h4>
           <p>Lorem ipsum dolor sit amet</p>
@@ -98,7 +99,7 @@
           <p>Lorem ipsum dolor sit amet</p>
         </li>
       </ul>
-      <div class="we">
+      <div class="we wow">
         <h2>What <span>we do</span></h2>
         <div class="we-box">
           <p>We focus on data analysis and infrastructure development which allows us to maintain a top position in the
@@ -113,28 +114,28 @@
   <section class="benefit">
     <div class="container">
       <ul>
-        <li>
+        <li class="wow">
           <img src="images/benefit-1.svg" alt="Benefit">
           <h3>TRADING Platform</h3>
           <p>HFT-class trading platform with < 10 μs end-to-end latency.</p>
         </li>
-        <li>
+        <li class="wow">
           <img src="images/benefit-2.svg" alt="Benefit">
           <h3>ALGORITHMS</h3>
           <p>Market making and latency arbitrage trading algorithms can handle thousands of instruments on dozens of
             markets simultaneously.</p>
         </li>
-        <li>
+        <li class="wow">
           <img src="images/benefit-3.svg" alt="Benefit">
           <h3>MARKET SIMULATION</h3>
           <p>High precision backtesting and simulation infrastructure.</p>
         </li>
-        <li>
+        <li class="wow">
           <img src="images/benefit-4.svg" alt="Benefit">
           <h3>INFRASTRUCTURE</h3>
           <p>Ultra-low latency networking around the world; optimal for complex algorithmic traiding solutions.</p>
         </li>
-        <li>
+        <li class="wow">
           <img src="images/benefit-5.svg" alt="Benefit">
           <h3>RESEARCH</h3>
           <p>We conduct our own research on market microstructure, dynamics of liquidity flows in fragmented markets,
@@ -146,7 +147,7 @@
 
   <div class="container">
     <section class="we-are">
-      <div class="we">
+      <div class="we wow">
         <h2>Who we <span>are</span></h2>
         <div class="we-box">
           <p>A team of fintech professionals with vast experience in quantitative analysis, software, and systems
@@ -155,10 +156,10 @@
           <a class="button-link" href="about.html">About</a>
         </div>
       </div>
-      <h4>To succeed in today’s markets is through constant <span>enhancement</span>, and the only way to achieve that
+      <h4 class="wow">To succeed in today’s markets is through constant <span>enhancement</span>, and the only way to achieve that
         is by <span>collaborating</span> with highly <span>talented people</span>
       </h4>
-      <a class="button-link" href="careers.html" id="button-we-are">Career</a>
+      <a class="button-link wow" href="careers.html" id="button-we-are">Career</a>
     </section>
   </div>
 
@@ -288,7 +289,11 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>-->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 <script src='js/main.js'></script>
 </body>
 
