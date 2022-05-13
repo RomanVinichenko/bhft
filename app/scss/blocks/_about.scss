@@ -247,10 +247,10 @@
 }
 
 .we-do__about {
-  margin-bottom: 186px;
+  margin-bottom: 250px;
 
   @include r(1500) {
-    margin-bottom: 140px;
+    margin-bottom: 180px;
   }
 
   @include r($md) {

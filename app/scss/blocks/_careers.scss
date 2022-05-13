@@ -77,7 +77,7 @@
 }
 
 .work {
-  padding: 250px 0 262px;
+  padding: 250px 0;
   background-image: url("../images/decor-dark.svg");
   background-position: center right 42%;
   background-size: cover;
@@ -667,4 +667,13 @@
   form {
     width: 100%;
   }
+}
+
+.connect--vacancy {
+  padding: 0 0 200px;
+}
+
+.connect__wrapper--vacancy {
+  padding-top: 50px;
+  border-top: 2px solid $black;
 }
