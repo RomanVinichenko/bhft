@@ -99,12 +99,12 @@
   <section class="video">
     <div class="container">
       <div class="video__wrapper">
-        <div class="video__inner">
+        <div class="video__inner wow">
           <h4>Betterhand Financial Technologies</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac eget at non quam ultricies purus tincidunt.
             Phasellus posuere mauris sed aenean vitae fringilla mus.</p>
         </div>
-        <div class="video__play">
+        <div class="video__play wow">
           <button>
             <img class="video__play--big" src="images/video-play.svg" alt="Video play">
             <img class="video__play--small" src="images/video-play-small.svg" alt="Video play">
@@ -117,20 +117,20 @@
   <div class="container">
     <section class="we-do we-do__about">
       <ul class="we-do__items">
-        <li>
+        <li class="wow">
           <h4>500+</h4>
           <p>Lorem ipsum dolor sit amet</p>
         </li>
-        <li>
+        <li class="wow">
           <h4>1 500</h4>
           <p>Lorem ipsum dolor sit amet</p>
         </li>
-        <li>
+        <li class="wow">
           <h4>200</h4>
           <p>Lorem ipsum dolor sit amet</p>
         </li>
       </ul>
-      <div class="we we__about">
+      <div class="we we__about wow">
         <h2>Our <span>team</span></h2>
         <div class="we-box we-box__about">
           <p>Rhoncus ac turpis justo, nibh neque, posuere porta magna augue. Egestas magna turpis convallis egestas.
@@ -142,32 +142,32 @@
         </div>
       </div>
       <ul class="team">
-        <li>
+        <li class="wow">
           <img src="images/team1.jpg" alt="Person 1">
           <h5>Bessie Cooper</h5>
           <p>Co-Founder</p>
         </li>
-        <li>
+        <li class="wow">
           <img src="images/team2.jpg" alt="Person 2">
           <h5>Bessie Cooper</h5>
           <p>Co-Founder</p>
         </li>
-        <li>
+        <li class="wow">
           <img src="images/team3.jpg" alt="Person 3">
           <h5>Bessie Cooper</h5>
           <p>Head of HR</p>
         </li>
-        <li>
+        <li class="wow">
           <img src="images/team4.jpg" alt="Person 4">
           <h5>Bessie Cooper</h5>
           <p>Marketing Assistant</p>
         </li>
-        <li>
+        <li class="wow">
           <img src="images/team5.jpg" alt="Person 5">
           <h5>Bessie Cooper</h5>
           <p>Marketing Coordinator</p>
         </li>
-        <li>
+        <li class="wow">
           <img src="images/team-noone.jpg" alt="Might be you">
           <h5>It can be you</h5>
           <a class="link-more link-more__about" href="careers.html">View our vacancy</a>
@@ -175,7 +175,7 @@
       </ul>
     </section>
 
-    <section class="join">
+    <section class="join wow">
       <a href="careers.html">
         <h2>JOIN our TALENTED TEAM</h2>
         <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -184,7 +184,7 @@
       </a>
     </section>
 
-    <section class="facts">
+    <section class="facts wow">
       <h2>BHFT <span>Facts</span></h2>
       <ul>
         <li>
@@ -201,7 +201,7 @@
   </div>
 </main>
 
-<footer class="footer">
+<footer class="footer wow">
   <div class="container">
     <div class="footer__container">
       <nav class="menu-footer">
@@ -255,7 +255,10 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>-->
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 <script src='js/main.js'></script>
 </body>
 

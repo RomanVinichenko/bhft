@@ -1,6 +1,7 @@
 .start {
   position: relative;
   margin-bottom: 5px;
+  overflow: hidden;
 
   &__wrapper {
     display: flex;
@@ -105,6 +106,18 @@
         @include r($md) {
           margin: 0 0 50px;
         }
+      }
+
+      &:nth-child(1) {
+        animation: appear 1.5s;
+      }
+
+      &:nth-child(2) {
+        animation: appear 1.55s;
+      }
+
+      &:nth-child(3) {
+        animation: appear 1.6s;
       }
 
       @include r($xl) {
