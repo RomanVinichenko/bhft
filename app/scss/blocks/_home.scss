@@ -562,6 +562,42 @@
         }
       }
 
+      &:nth-child(1) {
+        animation: appear 1.5s;
+      }
+
+      &:nth-child(2) {
+        animation: appear 1.6s;
+      }
+
+      &:nth-child(3) {
+        animation: appear 1.7s;
+      }
+
+      &:nth-child(4) {
+        animation: appear 1.8s;
+      }
+
+      &:nth-child(5) {
+        animation: appear 1.9s;
+      }
+
+      &:nth-child(6) {
+        animation: appear 2s;
+      }
+
+      &:nth-child(7) {
+        animation: appear 2.05s;
+      }
+
+      &:nth-child(8) {
+        animation: appear 2.1;
+      }
+
+      &:nth-child(9) {
+        animation: appear 2.15;
+      }
+
       @include r($md) {
         padding-bottom: 20px;
         border-bottom: 1px solid $black;
@@ -578,6 +614,7 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    animation: appear 1.5s;
 
     @include r($md) {
       flex-direction: column;
@@ -660,6 +697,7 @@
     justify-content: space-between;
     padding-top: 50px;
     border-top: 2px solid $black;
+    animation: appear 1.5s;
 
     @include r($md) {
       flex-direction: column;
@@ -719,6 +757,42 @@
           margin-bottom: 10px;
           font-size: 16px;
         }
+      }
+
+      &:nth-child(1) {
+        animation: appear 1.5s;
+      }
+
+      &:nth-child(2) {
+        animation: appear 1.6s;
+      }
+
+      &:nth-child(3) {
+        animation: appear 1.7s;
+      }
+
+      &:nth-child(4) {
+        animation: appear 1.8s;
+      }
+
+      &:nth-child(5) {
+        animation: appear 1.9s;
+      }
+
+      &:nth-child(6) {
+        animation: appear 2s;
+      }
+
+      &:nth-child(7) {
+        animation: appear 2.05s;
+      }
+
+      &:nth-child(8) {
+        animation: appear 2.1;
+      }
+
+      &:nth-child(9) {
+        animation: appear 2.15;
       }
 
       @include r(1600) {
