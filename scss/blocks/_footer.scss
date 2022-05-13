@@ -2,6 +2,7 @@
   padding: 25px 0;
   color: $white;
   background-color: $main;
+  animation: appear 1.5s;
 
   &__container {
     @include r($md) {
