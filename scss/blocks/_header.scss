@@ -5,6 +5,7 @@
   z-index: 20;
   padding-top: 68px;
   transition: all 0.2s;
+  animation: appear 1.5s;
 
   &--active {
     padding-top: 20px;
@@ -335,15 +336,5 @@
   @include r($lg) {
     width: 34px;
     height: 34px;
-  }
-}
-
-@keyframes menu-move {
-  0% {
-    transform: translateX(-150px);
-  }
-
-  100% {
-    transform: translateX(0);
   }
 }
