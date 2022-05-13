@@ -87,6 +87,7 @@
 
   &__inner {
     max-width: 740px;
+    animation: appear 1.5s;
 
     h4 {
       margin-bottom: 25px;
@@ -139,6 +140,7 @@
 
   &__play {
     margin: 0 auto;
+    animation: appear 1.5s;
 
     button {
       margin-bottom: 25px;
@@ -321,6 +323,30 @@
         font-size: 14px;
       }
     }
+
+    &:nth-child(1) {
+      animation: appear 1.5s;
+    }
+
+    &:nth-child(2) {
+      animation: appear 1.55s;
+    }
+
+    &:nth-child(3) {
+      animation: appear 1.6s;
+    }
+
+    &:nth-child(4) {
+      animation: appear 1.65s;
+    }
+
+    &:nth-child(5) {
+      animation: appear 1.7s;
+    }
+
+    &:nth-child(6) {
+      animation: appear 1.75s;
+    }
   }
 
   @include r($xl) {
@@ -340,6 +366,7 @@
 .join {
   margin-bottom: 250px;
   background-image: linear-gradient(88.28deg, #ac1def -0.15%, #1d4bef 100%);
+  animation: appear 1.5s;
 
   h2 {
     margin-right: 66px;
@@ -434,6 +461,7 @@
 .facts {
   display: flex;
   margin-bottom: 200px;
+  animation: appear 1.5s;
 
   h2 {
     margin-right: 50px;
@@ -515,6 +543,18 @@
         @include r($md) {
           margin-bottom: 25px;
         }
+      }
+
+      &:nth-child(1) {
+        animation: appear 1.5s;
+      }
+
+      &:nth-child(2) {
+        animation: appear 1.55s;
+      }
+
+      &:nth-child(3) {
+        animation: appear 1.6s;
       }
 
       @include r(1500) {
