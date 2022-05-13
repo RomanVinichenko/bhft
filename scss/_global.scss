@@ -109,6 +109,7 @@ h3 {
     display: flex;
     margin-bottom: 250px;
     padding-top: 300px;
+    animation: appear 1.5s;
 
     @include r($lg) {
       flex-direction: column;
