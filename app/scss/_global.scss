@@ -54,7 +54,7 @@ h3 {
     max-width: 1128px;
   }
 
-  @include r(1800) {
+  @include r($md) {
     padding: 0 24px;
     max-width: 1528px;
   }
