@@ -48,6 +48,16 @@ h3 {
   margin: 0 auto !important;
   padding: 0 24px !important;
   max-width: 1528px !important;
+
+  @include r(1800) {
+    padding: 0 100px !important;
+    max-width: 1128px !important;
+  }
+
+  @include r(1800) {
+    padding: 0 24px !important;
+    max-width: 1528px !important;
+  }
 }
 
 .button-link {
@@ -333,7 +343,7 @@ h3 {
 
 .accordion li:last-child {
   @include r($md) {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #000 !important;
   }
 }
 
