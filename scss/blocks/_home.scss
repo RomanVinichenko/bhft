@@ -1,6 +1,7 @@
 .start {
   position: relative;
   margin-bottom: 5px;
+  overflow: hidden;
 
   &__wrapper {
     display: flex;
