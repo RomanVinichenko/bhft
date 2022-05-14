@@ -689,6 +689,11 @@
     transform: translateY(-50%);
   }
 
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+
   @include r($md) {
     padding-right: 34px;
     font-size: 14px;

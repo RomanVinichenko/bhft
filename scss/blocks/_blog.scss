@@ -56,6 +56,7 @@
       img {
         margin-right: 50px;
         width: 100%;
+        min-height: 310px;
         max-width: 460px;
         max-height: 310px;
         object-fit: cover;
@@ -145,7 +146,7 @@
         width: 40px;
         height: 40px;
         border: 1px solid $main;
-        border-radius: 50%;
+        border-radius: 50% !important;
         font-weight: 500;
         font-size: 20px;
         line-height: 40px;
@@ -155,12 +156,12 @@
         transition: background-color 0.2s, color 0.2s;
 
         &:hover {
-          background-color: #e3e8ff;
+          background-color: #e3e8ff !important;
         }
 
         &:active {
-          color: $white;
-          background-color: #2d5bfe;
+          color: $white !important;
+          background-color: #2d5bfe !important;
         }
 
         @include r($md) {
