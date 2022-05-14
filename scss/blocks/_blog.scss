@@ -2,6 +2,7 @@
   position: relative;
   padding: 300px 0 250px;
   overflow: hidden;
+  animation: appear 1.5s;
 
   &::after {
     content: url("../images/decor1.svg");
@@ -114,6 +115,46 @@
         }
       }
 
+      &:nth-child(1) {
+        animation: appear 1.5s;
+      }
+
+      &:nth-child(2) {
+        animation: appear 1.55s;
+      }
+
+      &:nth-child(3) {
+        animation: appear 1.6s;
+      }
+
+      &:nth-child(4) {
+        animation: appear 1.65s;
+      }
+
+      &:nth-child(5) {
+        animation: appear 1.7s;
+      }
+
+      &:nth-child(6) {
+        animation: appear 1.75s;
+      }
+
+      &:nth-child(7) {
+        animation: appear 1.8s;
+      }
+
+      &:nth-child(8) {
+        animation: appear 1.85s;
+      }
+
+      &:nth-child(9) {
+        animation: appear 1.9s;
+      }
+
+      &:nth-child(10) {
+        animation: appear 1.95s;
+      }
+
       @include r($md) {
         flex-direction: column;
         padding-bottom: 20px;
@@ -130,11 +171,13 @@
 }
 
 .pagination {
+  justify-content: center;
   margin-bottom: 50px;
 
   &__list {
     display: flex;
     justify-content: center;
+    animation: appear 1.5s;
 
     li {
       a {

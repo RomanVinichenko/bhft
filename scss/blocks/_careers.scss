@@ -259,6 +259,8 @@
 
   h2 {
     margin-bottom: 150px;
+    width: 100%;
+    max-width: 100%;
     text-align: center;
 
     span {
@@ -328,6 +330,7 @@
 
   &__photo-inner {
     display: none;
+    animation: appear 1.5s;
 
     h5 {
       margin-bottom: 5px;
@@ -471,7 +474,7 @@
   .connect__link {
     position: relative;
     display: block;
-    margin: 0 0 300px auto;
+    margin: 0 0 200px auto;
     padding-right: 125px;
     width: fit-content;
     font-weight: 500;
@@ -498,8 +501,16 @@
       }
     }
 
+    &:active,
+    &:hover,
+    &:focus {
+      outline: 0;
+      outline-offset: 0;
+      text-decoration: none;
+    }
+
     @include r(1700) {
-      margin: 0 0 200px auto;
+      margin: 0 0 150px auto;
       font-size: 52px;
     }
 
@@ -679,6 +690,8 @@
 }
 
 .connect--contact {
+  animation: appear 1.5s;
+
   &::before {
     display: none;
   }

@@ -84,7 +84,7 @@
 
   <section class="candidate">
     <div class="container">
-      <div class="candidate__wrapper">
+      <div class="candidate__wrapper wow">
         <h4>We expect that the candidate will</h4>
         <ol>
           <li>
@@ -98,7 +98,7 @@
           </li>
         </ol>
       </div>
-      <h3>BHFT we offer an excellent opportunity for professional growth and self-realization. An ideal atmosphere for
+      <h3 class="wow">BHFT we offer an excellent opportunity for professional growth and self-realization. An ideal atmosphere for
         working with highly talented specialists. Competitive salaries and flexible working conditions - choose to work
         in any of our premium office spaces around the globe or from the comfort of your own home.</h3>
     </div>
@@ -106,7 +106,7 @@
 
   <section class="skills skills--bg">
     <div class="container">
-      <div class="skills__wrapper">
+      <div class="skills__wrapper wow">
         <h4>Responsibilities</h4>
         <div class="skills__inner">
           <ul>
@@ -123,7 +123,7 @@
               Define required team structure, participate in the recruitment process;
             </li>
           </ul>
-          <a class="button-link" href="#">Show more</a>
+          <a class="button-link wow" href="#">Show more</a>
         </div>
       </div>
     </div>
@@ -131,7 +131,7 @@
 
   <section class="skills">
     <div class="container">
-      <div class="skills__wrapper">
+      <div class="skills__wrapper wow">
         <h4>Required Skills and Experience</h4>
         <div class="skills__inner">
           <ul>
@@ -148,7 +148,7 @@
               DStrong capability to be hands-on in product planning, research, and analysis using modern tools;
             </li>
           </ul>
-          <a class="button-link" href="#">Show more</a>
+          <a class="button-link wow" href="#">Show more</a>
         </div>
       </div>
     </div>
@@ -158,20 +158,20 @@
     <div class="container">
       <div class="connect__wrapper connect__wrapper--vacancy">
         <div class="connect__photo-wrapper">
-          <div class="connect__photo-inner">
+          <div class="connect__photo-inner wow">
             <img class="connect__photo-mobile" src="images/connect-mobile.png" alt="Connect mobile">
             <div class="connect__photo-info">
               <h5>Valerie Valerie</h5>
               <p>Head of HR</p>
             </div>
           </div>
-          <img class="connect__photo-desktop" src="images/connect.jpg" alt="Connect">
+          <img class="connect__photo-desktop wow" src="images/connect.jpg" alt="Connect">
         </div>
-        <div class="connect__info">
+        <div class="connect__info wow">
           <h3 class="blockquote">Haven't found what you are looking for? Then, let our <span>talent acquisition team leader</span>
             Valerie know about your talents!</h3>
           <a class="connect__link" href="#">JOB@BHFT.COM</a>
-          <form class="form">
+          <form class="form wow">
             <input type="text" placeholder="Name">
             <input type="email" placeholder="Email">
             <label class="connect__upload">
@@ -248,8 +248,10 @@
   </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>-->
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 <script src='js/main.js'></script>
 </body>
 
