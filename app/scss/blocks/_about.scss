@@ -377,7 +377,7 @@
 
     &:hover {
       text-decoration: none;
-      color: inherit;
+      color: $white;
     }
 
     @include r(1500) {

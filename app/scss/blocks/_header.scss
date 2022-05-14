@@ -72,6 +72,13 @@
         color: inherit;
         transition: color 0.2s;
 
+        &:active,
+        &:hover,
+        &:focus {
+          outline: 0;
+          outline-offset: 0;
+        }
+
         &:hover {
           text-decoration: none;
           color: $main;
