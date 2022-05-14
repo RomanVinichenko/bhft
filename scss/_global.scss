@@ -46,17 +46,17 @@ h3 {
 
 .container {
   margin: 0 auto !important;
-  padding: 0 24px !important;
-  max-width: 1528px !important;
+  padding: 0 24px;
+  max-width: 1528px;
 
   @include r(1800) {
-    padding: 0 100px !important;
-    max-width: 1128px !important;
+    padding: 0 100px;
+    max-width: 1128px;
   }
 
   @include r(1800) {
-    padding: 0 24px !important;
-    max-width: 1528px !important;
+    padding: 0 24px;
+    max-width: 1528px;
   }
 }
 
