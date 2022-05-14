@@ -49,14 +49,16 @@ h3 {
   padding: 0 24px;
   max-width: 1528px;
 
-  @include r(1800) {
+  @include r(1600) {
     padding: 0 80px;
-    max-width: 1128px;
+  }
+
+  @include r($lg) {
+    padding: 0 60px;
   }
 
   @include r($md) {
     padding: 0 24px;
-    max-width: 1528px;
   }
 }
 
@@ -279,10 +281,6 @@ h3 {
   p {
     margin-bottom: 15px;
   }
-}
-
-.btn-header-link {
-  padding-top: 40px;
 }
 
 .article-info {
