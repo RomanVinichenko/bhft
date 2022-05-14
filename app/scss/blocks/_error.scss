@@ -25,6 +25,8 @@
   }
 
   &__message {
+    animation: appear 1.5s;
+
     h2 {
       font-family: "Neue Machina", sans-serif;
       font-weight: 500;
@@ -46,6 +48,7 @@
   &__info {
     margin-right: 30px;
     max-width: 715px;
+    animation: appear 1.5s;
 
     span {
       display: block;

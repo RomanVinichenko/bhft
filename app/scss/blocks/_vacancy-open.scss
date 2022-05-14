@@ -16,6 +16,7 @@
     margin: 0 0 150px auto;
     padding-top: 20%;
     max-width: 970px;
+    animation: appear 1.5s;
 
     @include r($xl) {
       margin: 0 auto 100px 0;
@@ -51,6 +52,7 @@
     width: 100%;
     max-height: 500px;
     object-fit: cover;
+    animation: appear 1.6s;
 
     @include r($xl) {
       min-height: 150px;
@@ -70,6 +72,7 @@
     margin-bottom: 150px;
     padding-top: 50px;
     border-top: 2px solid $black;
+    animation: appear 1.5s;
 
     h4 {
       margin-right: 50px;
@@ -114,6 +117,7 @@
 
     ol {
       padding-left: 28px;
+      list-style: decimal;
 
       li {
         align-items: flex-start;
@@ -175,6 +179,7 @@
     font-size: 48px;
     text-transform: uppercase;
     color: $main;
+    animation: appear 1.5s;
 
     @include r(1600) {
       font-size: 36px;
@@ -209,6 +214,7 @@
     display: flex;
     padding-top: 50px;
     border-top: 2px solid $black;
+    animation: appear 1.5s;
 
     @include r($md) {
       flex-direction: column;
@@ -281,11 +287,12 @@
     position: relative;
 
     &::after {
-      content: url("../images/decor-expert1.svg");
+      content: url("../images/decor1.svg");
       position: absolute;
-      right: 70%;
-      top: -80%;
+      right: 2%;
+      top: -48%;
       z-index: -1;
+      opacity: 0.2;
       width: 100%;
       height: 100%;
     }

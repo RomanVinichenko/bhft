@@ -67,7 +67,7 @@
 </header>
 
 <main class="main">
-  <section class="blog">
+  <section class="blog wow">
     <div class="container">
       <h1>NEWS AND <span>EVENTs</span></h1>
     </div>
@@ -75,7 +75,7 @@
   <section class="note">
     <div class="container">
       <ul class="note__list">
-        <li>
+        <li class="wow">
           <img src="images/article-1.jpg" alt="Article cover">
           <div class="note__info">
             <span>Apr 30, 2022</span>
@@ -85,7 +85,7 @@
             <a class="link-more" href="#">Read More</a>
           </div>
         </li>
-        <li>
+        <li class="wow">
           <img src="images/article-1.jpg" alt="Article cover">
           <div class="note__info">
             <span>Apr 30, 2022</span>
@@ -95,7 +95,7 @@
             <a class="link-more" href="#">Read More</a>
           </div>
         </li>
-        <li>
+        <li class="wow">
           <img src="images/article-1.jpg" alt="Article cover">
           <div class="note__info">
             <span>Apr 30, 2022</span>
@@ -105,7 +105,7 @@
             <a class="link-more" href="#">Read More</a>
           </div>
         </li>
-        <li>
+        <li class="wow">
           <img src="images/article-1.jpg" alt="Article cover">
           <div class="note__info">
             <span>Apr 30, 2022</span>
@@ -117,8 +117,8 @@
         </li>
       </ul>
       <div class="pagination">
-        <a class="button-link" href="#">See More</a>
-          <ul class="pagination__list">
+        <a class="button-link wow" href="#">See More</a>
+          <ul class="pagination__list wow">
             <li>
               <a href="#">1</a>
             </li>
@@ -196,8 +196,10 @@
   </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>-->
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 <script src='js/main.js'></script>
 </body>
 

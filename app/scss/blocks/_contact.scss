@@ -2,6 +2,7 @@
   position: relative;
   padding: 300px 0 250px;
   overflow: hidden;
+  animation: appear 1.5s;
 
   &::after {
     content: url("../images/decor1.svg");
@@ -31,6 +32,8 @@
 }
 
 .contact-box {
+  animation: appear 1.5s;
+
   &__item {
     display: flex;
     padding: 50px 0;
