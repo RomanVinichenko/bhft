@@ -319,19 +319,15 @@ h3 {
 }
 
 .job .accordion li {
-  padding-bottom: 40px;
-
   @include r($md) {
-    padding-bottom: 20px;
-    border-top: 1px solid #000;
+    padding-bottom: 20px !important;
+    border-top: 1px solid #000 !important;
   }
 }
 
 .btn-header-link {
-  padding-top: 40px;
-
   @include r($md) {
-    padding-top: 20px;
+    padding-top: 20px !important;
   }
 }
 
@@ -343,6 +339,10 @@ h3 {
 
 .btn-header-link::after {
   @include r($md) {
-    padding-top: 20px;
+    top: 19px !important;
+    width: 24px !important;
+    height: 24px !important;
+    background-size: 24px !important;
+    background-repeat: no-repeat !important;
   }
 }
