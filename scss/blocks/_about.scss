@@ -202,11 +202,6 @@
     }
   }
 
-  &--careers {
-    margin-bottom: 0 !important;
-    background-image: url("../images/video-bg-careers.jpg");
-  }
-
   @include r(1500) {
     padding: 200px 0;
   }
@@ -224,6 +219,11 @@
   @include r($sm) {
     padding: 95px 0;
   }
+}
+
+.video--careers {
+  margin-bottom: 250px;
+  background-image: url("../images/video-bg-careers.jpg");
 }
 
 .we__about {

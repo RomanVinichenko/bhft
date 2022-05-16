@@ -81,7 +81,7 @@
 
         &:hover {
           text-decoration: none;
-          color: $main;
+          color: $main !important;
         }
 
         &:active {
