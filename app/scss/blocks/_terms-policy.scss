@@ -1,0 +1,79 @@
+.terms-privacy {
+  position: relative;
+  padding: 300px 0 250px;
+  overflow: hidden;
+  animation: appear 1.5s;
+
+  &::after {
+    content: url("../images/decor1.svg");
+    position: absolute;
+    left: -200px;
+    top: 0;
+    z-index: -1;
+    opacity: 0.2;
+  }
+
+  h1 {
+    font-family: "Neue Machina", sans-serif;
+    text-transform: uppercase;
+
+    @include r($xl) {
+      font-size: 50px;
+    }
+
+    @include r($md) {
+      font-size: 30px;
+    }
+  }
+
+  @include r($md) {
+    padding: 159px 0 48px;
+  }
+}
+
+.terms-policy__wrapper {
+  padding-bottom: 182px;
+  line-height: 1.15;
+
+  h3 {
+    margin: 100px 0 50px;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 36px;
+
+    &:first-child {
+      margin: 0 0 50px;
+    }
+  }
+
+  p {
+    margin-bottom: 18px;
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  ul {
+    margin-bottom: 18px;
+    padding-left: 36px;
+    font-size: 24px;
+
+    li {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: -19px;
+        top: 11px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: $black;
+      }
+    }
+  }
+
+  a {
+    color: #1d4bef;
+  }
+}
