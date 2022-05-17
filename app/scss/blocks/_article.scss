@@ -186,8 +186,6 @@
   &--bg {
     position: relative;
 
-    //overflow: hidden;
-
     &::after {
       content: url("../images/decor1.svg");
       position: absolute;
