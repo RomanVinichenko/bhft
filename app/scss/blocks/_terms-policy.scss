@@ -95,11 +95,23 @@
         content: "";
         position: absolute;
         left: -19px;
-        top: 11px;
+        top: 8px;
         width: 6px;
         height: 6px;
         border-radius: 50%;
         background-color: $black;
+
+        @include r($lg) {
+          left: -16px;
+          width: 5px;
+          height: 5px;
+        }
+
+        @include r($lg) {
+          left: -13px;
+          width: 4px;
+          height: 4px;
+        }
       }
     }
 
@@ -107,13 +119,14 @@
       font-size: 20px;
     }
 
-    @include r($md) {
-      margin-bottom: 12px;
-      font-size: 16px;
+    @include r($lg) {
+      padding-left: 30px;
     }
 
     @include r($md) {
-      padding-left: 30px;
+      margin-bottom: 12px;
+      padding-left: 25px;
+      font-size: 16px;
     }
   }
 
