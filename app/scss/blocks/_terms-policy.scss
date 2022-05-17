@@ -112,6 +112,10 @@
       }
     }
 
+    @include r(1500) {
+      font-size: 22px;
+    }
+
     @include r($xl) {
       font-size: 20px;
     }
